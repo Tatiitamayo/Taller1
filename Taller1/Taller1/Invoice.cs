@@ -15,11 +15,11 @@ namespace Taller1
             _products = AddProduct(product);
         }
 
-        private string AddProduct(string product)
+        public string AddProduct(string product)
         {
             throw new NotImplementedException();
         }
-        public decimal GetValueToPay()
+        public decimal ValueToPay()
         {
             throw new NotImplementedException();
         }
