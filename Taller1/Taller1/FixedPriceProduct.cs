@@ -12,7 +12,7 @@ namespace Taller1
         public override decimal GetValueToPay()
         {
             decimal TotalFixed = 0;
-            return TotalFixed = (Price * Tax) + Price;
+            return TotalFixed = (Price * (decimal)Tax) + Price;
         }
 
 

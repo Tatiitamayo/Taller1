@@ -8,16 +8,15 @@ namespace Taller1
 {
     public class VariablePriceProduct : Product
     {
-        public decimal Measurement { get; set; }
+        public string Measurement { get; set; }
 
-        public decimal Quantity { get; set; }
-
+        public float Quantity { get; set; }
         public override decimal GetValueToPay()
         {
             decimal TotalV1 = 0;
             decimal TotalV2 = 0;
-            TotalV1 = (Price * Quantity);
-            TotalV2 = TotalV1 * Tax;
+            TotalV1 = Price * (decimal)Quantity;
+            TotalV2 = TotalV1 * (decimal)Tax;
             return TotalV1 + TotalV2;
         }
 

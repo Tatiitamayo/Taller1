@@ -19,11 +19,16 @@ namespace Taller1
         {
             throw new NotImplementedException();
         }
-
+        public decimal GetValueToPay()
+        {
+            throw new NotImplementedException();
+        }
         public override string ToString()
         {
             return $"{_products}";
         }
+
+        
     }
 }
 

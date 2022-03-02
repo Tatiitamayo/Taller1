@@ -14,7 +14,7 @@ namespace Taller1
 
         public decimal Price { get; set; }
 
-        public decimal Tax { get; set; }
+        public float Tax { get; set; }
 
         public abstract decimal GetValueToPay(); // lo heredan las de mas clases de producto
 

@@ -1,4 +1,7 @@
-﻿Console.WriteLine("**** Taller POO ****");
+﻿
+using Taller1;
+
+Console.WriteLine("**** Taller POO ****");
 
 //INSTANCIAR DE LA CLASE 
 Product product1 = new FixedPriceProduct()
@@ -52,42 +55,4 @@ invoice.AddProduct(product3);
 invoice.AddProduct(product5);
 Console.WriteLine(invoice);
 
-VARIABLEPRICEPRODUCT
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TallerPOO
-{
-    public class VariablePriceProduct : Product
-    {
-        public decimal Measurement { get; set; }
-
-        public decimal Quantity { get; set; }
-
-        public override decimal GetValueToPay()
-        {
-            decimal TotalV1 = 0;
-            decimal TotalV2 = 0;
-            TotalV1 = (Price * Quantity);
-            TotalV2 = TotalV1 * Tax;
-            return TotalV1 + TotalV2;
-        }
-
-        public override string ToString()
-        {
-            return $"{Id} {Description}" +
-                 $"\n\tMeasurement: {$"{Measurement}",16} " +
-                 $"\n\tQuantity...: {$"{Quantity:C2}",16} " +
-                 $"\n\tPrice......: {$"{Price:C2}",16} " + //C2-P2-N2
-                 $"\n\tTax........: {$"{Tax:P2}",16} " +
-                 $"\n\tValue......: {$"{GetValueToPay:C2}",16} ";
-
-        }
-
-    }
-
-}

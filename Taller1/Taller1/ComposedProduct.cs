@@ -9,23 +9,17 @@ namespace Taller1
     public class ComposedProduct : Product
     {
 
-        public decimal Discount { get; set; }
+        public float Discount { get; set; }
         public string Products { get; set; }
 
-        public override decimal ValueToPay()
+        public override decimal GetValueToPay()
         {
             foreach (Product product in Products)
             {
-                decimal totalDisc0 = 0;
-                float totalDisc = 0;
-
-                totalDisc0 = product.ValueToPay();
-                totalDisc = totalDisc0 * Discount;
 
             }
-            return GetValueToPay += totalDisc0 - totalDisc;
-
         }
+    }
 
         public override string ToString()
         {
@@ -35,6 +29,6 @@ namespace Taller1
                 $"\n\tValue......: {$"{GetValueToPay:C2}",16} ";
         }
 
-    }
+    
 }
-}
+
