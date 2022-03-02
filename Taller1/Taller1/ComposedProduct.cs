@@ -25,7 +25,7 @@ namespace Taller1
             return GetValueToPay += totalDisc0 - totalDisc1;
         }
     }
-
+      
         public override string ToString()
         {
             return $"{Id}{Description}" +
