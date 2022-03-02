@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace Taller1
     {
 
         public float Discount { get; set; }
-        public string Products { get; set; }
+        public ICollection Products { get; set; }
 
-        public override decimal GetValueToPay()
+        public override decimal ValueToPay()
         {
 
             decimal totalDisc0 = 0;
@@ -20,11 +21,11 @@ namespace Taller1
 
             foreach (Product product in Products)
             {
-                totalDisc0 = product.GetValueToPay();
+                totalDisc0 = product.ValueToPay();
                 totalDisc1 = totalDisc0 * (decimal)Discount;
 
             }
-            return GetValueToPay += totalDisc0 - totalDisc1;
+            return ValueToPay += totalDisc0 - totalDisc1;
         }
 
         public override string ToString()
