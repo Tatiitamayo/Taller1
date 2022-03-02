@@ -5,9 +5,7 @@
 
         public override decimal ValueToPay()
         {
-            //decimal TotalFixed = 0;
-            //TotalFixed = 
-            //(Price * (decimal)Tax) + Price;
+        
             return (Price * (decimal)Tax) + Price;
         } 
 

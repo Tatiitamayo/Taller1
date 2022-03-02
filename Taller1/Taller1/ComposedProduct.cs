@@ -8,26 +8,36 @@ namespace Taller1
         public float Discount { get; set; }
         public ICollection Products { get; set; }
 
+        private string _prod { get; set; }
+
         public override decimal ValueToPay()
         {
-            decimal totalDisc0 = 0;
-            decimal totalDisc1 = 0;
-            decimal sum = 0;
+            decimal Total = 0;
 
             foreach (Product product in Products)
             {
+                decimal totalDisc0 = 0;
+                decimal prod;
 
-                totalDisc0 = product.ValueToPay();
-                totalDisc1 = totalDisc0 * (decimal)Discount;
+                prod = product.ValueToPay();
+                totalDisc0 = prod * (decimal)Discount;
+                Total = prod - (decimal)totalDisc0;
 
             }
-            return sum += totalDisc0 - totalDisc1;
+            return Total;
         }
 
         public override string ToString()
         {
+            foreach (Product product in Products)
+            {
+                _prod += product.Description + ",";
+
+            }
+
+
             return $"{Id} {Description}" +
-                $"\n\tProducts...: {Products}" +
+                $"\n\tProducts...: {$"{_prod}",16}" +
                 $"\n\tDiscount...: {$"{Discount:P2}",16} " +
                 $"\n\tValue......: {$"{ValueToPay():C2}",16} ";
         }
