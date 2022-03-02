@@ -26,10 +26,10 @@ namespace Taller1
 
         public override string ToString()
         {
-            return $"{Id}{Description}" +
+            return $"{Id} {Description}" +
                 $"\n\tProducts...: {Products}" +
                 $"\n\tDiscount...: {$"{Discount:P2}",16} " +
-                $"\n\tValue......: {$"{ValueToPay:C2}",16} ";
+                $"\n\tValue......: {$"{ValueToPay():C2}",16} ";
         }
 
 

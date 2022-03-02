@@ -15,8 +15,8 @@
         public override string ToString()
         {
             return $"{Id}-{Description}, " +
-                   $"Price: {Price}, " +
-                   $"Tax {Tax}";
+                   $"Price...: {Price}, " +
+                   $"Tax.....: {Tax}";
 
         }
     }
