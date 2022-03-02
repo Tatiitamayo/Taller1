@@ -14,6 +14,7 @@ namespace Taller1
 
         public override decimal GetValueToPay()
         {
+
             decimal totalDisc0 = 0;
             decimal totalDisc1 = 0;
 
@@ -21,11 +22,11 @@ namespace Taller1
             {
                 totalDisc0 = product.GetValueToPay();
                 totalDisc1 = totalDisc0 * (decimal)Discount;
+
             }
             return GetValueToPay += totalDisc0 - totalDisc1;
         }
-    }
-      
+
         public override string ToString()
         {
             return $"{Id}{Description}" +
@@ -34,6 +35,7 @@ namespace Taller1
                 $"\n\tValue......: {$"{GetValueToPay:C2}",16} ";
         }
 
-    
+
+    }
 }
 
