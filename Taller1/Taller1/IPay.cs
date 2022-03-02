@@ -8,7 +8,7 @@ namespace Taller1
 {
     public interface IPay
     {
-        public decimal GetValueToPay();
+        public decimal ValueToPay();
     }
 }
 

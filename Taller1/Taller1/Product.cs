@@ -16,7 +16,7 @@ namespace Taller1
 
         public float Tax { get; set; }
 
-        public abstract decimal GetValueToPay(); // lo heredan las de mas clases de producto
+        public abstract decimal ValueToPay(); // lo heredan las de mas clases de producto
 
         public override string ToString()
         {
