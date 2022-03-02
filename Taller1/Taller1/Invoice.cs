@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Taller1
 {
-    public class Invoice : IPay
+    public class  Invoice : IPay
     {
         private List<Product> _products;
-
+       
         public string Invoice(string product)
         {
             _products = new List<Product>();
