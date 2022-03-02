@@ -8,16 +8,17 @@ namespace Taller1
 {
     public class Invoice : IPay
     {
-        private string _products;
+        private List<Product> _products;
 
-        public Invoice(string product)
+        public string Invoice(string product)
         {
-            _products = AddProduct(product);
+            _products = new List<Product>();
         }
 
-        public string AddProduct(string product)
+        public Product AddProduct(Product product)
         {
-            throw new NotImplementedException();
+            _products.Add(product);
+            return product;
         }
         public decimal ValueToPay()
         {
