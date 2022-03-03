@@ -3,7 +3,7 @@
   <Class Name="Taller1.ComposedProduct">
     <Position X="9.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAgAAAAAAAAQ=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAEAAAACAAAAAAAAAAAAgAAAAAAAAQ=</HashCode>
       <FileName>ComposedProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -13,14 +13,6 @@
       <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FixedPriceProduct.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Taller1.Invoice">
-    <Position X="11.75" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAASAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
-      <FileName>Invoice.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Taller1.Product">
     <Position X="6" Y="3" Width="1.5" />
